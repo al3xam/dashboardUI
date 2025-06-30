@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   Basic Configuration
 -   MaterialUI library
+-   i18next library
 
 ### Changed
 
