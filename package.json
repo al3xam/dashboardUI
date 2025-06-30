@@ -1,7 +1,7 @@
 {
   "name": "dashboardui",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "author": {
     "name": "Alex Amorós Martínez",
@@ -11,7 +11,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "check:translations": "node src/i18n/checkTranslations.js",
+    "sort:translations": "node src/i18n/sortTranslations.js"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -20,11 +22,15 @@
     "@mui/icons-material": "^7.1.2",
     "@mui/material": "^7.1.2",
     "@mui/styled-engine-sc": "^7.1.1",
+    "@reduxjs/toolkit": "^2.8.2",
     "i18next": "^25.2.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-i18next": "^15.5.3",
-    "styled-components": "^6.1.19"
+    "react-redux": "^9.2.0",
+    "redux": "^5.0.1",
+    "styled-components": "^6.1.19",
+    "immer": "^10.1.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.29.0",
